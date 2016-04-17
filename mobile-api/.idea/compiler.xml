@@ -30,20 +30,6 @@
       <module name="mds-api-web" target="1.7" />
       <module name="mds-common" target="1.7" />
       <module name="parent" target="1.5" />
-      <module name="sw-admin" target="1.7" />
-      <module name="sw-admin-web" target="1.7" />
-      <module name="sw-api-web" target="1.7" />
-      <module name="sw-business" target="1.7" />
-      <module name="sw-common" target="1.7" />
-      <module name="sw-consume" target="1.7" />
-      <module name="sw-contract" target="1.7" />
-      <module name="sw-course" target="1.7" />
-      <module name="sw-erp" target="1.7" />
-      <module name="sw-erp-jobs" target="1.7" />
-      <module name="sw-erp-web" target="1.7" />
-      <module name="sw-member" target="1.7" />
-      <module name="sw-user" target="1.7" />
-      <module name="sw-venue" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

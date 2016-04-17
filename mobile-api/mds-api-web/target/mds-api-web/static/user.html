@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="user.css">
+    <script>
+        var xhr = new XMLHttpRequest(),
+            json = null, flag = [false, false];
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+              if (xhr.status >= 200 && xhr.status<=300 || xhr.status === 304) {
+                 json = xhr.responseText; 
+                  flag[0] = true;
+                  hasLoaded();
+              }
+          }  
+        };
+        xhr.open('get', 'http://192.168.191.1:8080/user/info?token=878BDDB517E7B629C0E6E68208A07449', true);
+        xhr.send(null);
+        window.onload = function () {
+            flag[1] = true;
+            hasLoaded();
+        };
+        function hasLoaded() {
+            if (flag[0] && flag[1]) {
+                var load = document.getElementById('load');
+            document.body.innerHTML = load.innerHTML;
+            json = JSON.parse(json);
+            username.innerHTML = json.infos.user.userName;
+            gz.innerHTML = json.infos.user.follow;
+            fs.innerHTML = json.infos.user.fans;
+            avtor.src="http://192.168.191.1:8080"+json.infos.user.icon;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="load">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <script type="text" id="load">
+        <div class="main">
+            <div class="mainBg">
+                <img src="zb.jpg" alt="">
+            </div>
+            <img id="avtor" src="" alt="Avator" style="height:100px">
+            <h2 id="username">用户名</h2>
+            <p>关注<span id="gz">2</span>粉丝<span id="fs">2</span></p>
+            <a href="#">申请认证</a>
+        </div>
+        <ul class="list">
+            <li>我的直播</li>
+            <li>我的消息</li>
+            <li>我的资料</li>
+        </ul>
+        <a href="#" id="out">退出账号</a>
+    </script>
+</body>
+</html>

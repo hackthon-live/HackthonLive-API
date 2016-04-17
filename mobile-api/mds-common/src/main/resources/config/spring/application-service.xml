@@ -8,9 +8,9 @@
     <context:annotation-config/>
 
     <!-- 启动Spring 注解扫描 -->
-    <context:component-scan base-package="com.iydsj.sw.common"/>
+    <context:component-scan base-package="com.showLive.mds.common"/>
 
-    <bean id="springContextUtil" class="com.iydsj.sw.common.utils.SpringContextUtil"/>
+    <bean id="springContextUtil" class="com.showLive.mds.common.utils.SpringContextUtil"/>
 
     <bean id="attachFileRootPath" class="java.lang.String">
         <constructor-arg>

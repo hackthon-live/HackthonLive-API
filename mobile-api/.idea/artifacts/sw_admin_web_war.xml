@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="sw-admin-web:war">
-    <output-path>$PROJECT_DIR$/sw-admin-web/target</output-path>
-    <root id="archive" name="sw-admin-web.war">
-      <element id="artifact" artifact-name="sw-admin-web:war exploded" />
-    </root>
-  </artifact>
-</component>

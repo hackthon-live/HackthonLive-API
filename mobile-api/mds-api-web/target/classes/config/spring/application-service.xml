@@ -7,8 +7,6 @@
 
     <context:annotation-config/>
 
-    <!-- 启动Spring 注解扫描 -->
-    <context:component-scan base-package="com.iydsj.sw.common"/>
 
     <bean id="attachFileRootPath" class="java.lang.String">
         <constructor-arg>
