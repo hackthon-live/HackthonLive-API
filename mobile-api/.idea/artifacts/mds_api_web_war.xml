@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mds-api-web:war">
+    <output-path>$PROJECT_DIR$/mds-api-web/target</output-path>
+    <root id="archive" name="mds-api-web.war">
+      <element id="artifact" artifact-name="mds-api-web:war exploded" />
+    </root>
+  </artifact>
+</component>

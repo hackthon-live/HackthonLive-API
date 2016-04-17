@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/mds-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sw-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sw-business" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sw-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sw-consume" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sw-contract" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sw-course" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sw-erp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sw-erp-jobs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sw-member" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sw-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sw-venue" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
